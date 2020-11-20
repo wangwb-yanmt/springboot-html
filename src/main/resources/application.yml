@@ -1,0 +1,23 @@
+
+server:
+  port: 8888
+        
+spring:
+  application:
+    name: springboot-html
+  redis:
+    host: 10.66.1.74
+    port: 6379
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1s   #最大阻塞等待时间(负数表示没限制)
+        max-idle: 8     #最大空闲
+        min-idle: 0     #最小空闲
+    timeout: 10s
+    
+sys:
+  passUrls: /LoginController, /public, /GeetestController
+    
+    
+    

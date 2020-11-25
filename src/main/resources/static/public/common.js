@@ -100,7 +100,6 @@ function sendAjax(url,params) {
 	    			var index = layer.open({
 	    				id:'reLogin',
 	    				title:"提示",
-	    				content: 'test',
 	    				btn: '重新登录',
 	    				btnAlign: 'c',
 	    				content: data.msg,

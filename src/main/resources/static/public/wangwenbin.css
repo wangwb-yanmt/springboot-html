@@ -1,12 +1,7 @@
-.container{
-	height:100%;
-	padding: 10px;
-}
 /* 圆角卡片 */
 .radius-card{
-	border-radius: 5px;
-	margin-bottom: 5px;
-	background-color: #EEEEEE;
+	border-radius: 3px;
+	background-color: white;
 }
 /* 竖向布局上->下 */
 .flex-column{
@@ -132,3 +127,15 @@
 .mt80{margin-top: 80px;}
 .mt90{margin-top: 90px;}
 .mt100{margin-top: 100px;}
+
+.mb5{margin-bottom: 5px;}
+.mb10{margin-bottom: 10px;}
+.mb20{margin-bottom: 20px;}
+.mb30{margin-bottom: 30px;}
+.mb40{margin-bottom: 40px;}
+.mb50{margin-bottom: 50px;}
+.mb60{margin-bottom: 60px;}
+.mb70{margin-bottom: 70px;}
+.mb80{margin-bottom: 80px;}
+.mb90{margin-bottom: 90px;}
+.mb100{margin-bottom: 100px;}

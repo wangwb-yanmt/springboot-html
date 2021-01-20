@@ -113,7 +113,7 @@ function queryList() {
 		//异步接口参数
 		method: 'post',
 		limit: 20,
-		url:"http://192.168.120.208:7777/TestController/getList",
+		url:"http://192.168.120.238:7777/TestController/getList",
 		where: {},	//接口的其他参数
 		headers: {token: getToken()},
 		parseData: function(res) { //res即为原始返回的数据
@@ -155,7 +155,7 @@ function addContent(CONTENT_ID) {
 }
 
 function queryTree() {
-	var resultData = sendAjax("http://192.168.120.208:7777/TestController/queryTree",{});
+	var resultData = sendAjax("http://192.168.120.238:7777/TestController/queryTree",{});
 	if(resultData.success == true) {
 		var zNodes = resultData.data;
 		renderZtree("treeDemo",zNodes);

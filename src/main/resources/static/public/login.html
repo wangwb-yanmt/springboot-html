@@ -103,7 +103,7 @@ layui.use(['form','jquery'], function(){
 	//监听提交
 	form.on('submit(tokenLogin)', function(data){
 		$.ajax({
-		    url:"http://192.168.120.208:7777/LoginController/loginForToken",
+		    url:"http://192.168.120.238:7777/LoginController/loginForToken",
 		    data:{"userName":$("[name='userName']").val(),"password":$("[name='password']").val()},
 		    type:"Post",
 		    dataType:"json",

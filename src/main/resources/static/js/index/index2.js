@@ -36,7 +36,7 @@ layui.use(['layer', 'element', 'jquery','form','tree'], function(){
 //退出系统
 function loginOut() {
 	layer.confirm('确定退出吗？',{icon: 3, title:'提示'},function(index){
-		var data = sendAjax("http://192.168.120.208:7777/LoginOutController/loginOutByToken",{});
+		var data = sendAjax("http://192.168.120.238:7777/LoginOutController/loginOutByToken",{});
 		if(data.success == true) {
 			//删除本地token
 			deleteToken();
@@ -50,7 +50,7 @@ function goHome() {
 }
 //查询顶层菜单
 function queryModule() {
-	var resultData = sendAjax("http://192.168.120.208:7777/TestController/queryModule",{});
+	var resultData = sendAjax("http://192.168.120.238:7777/TestController/queryModule",{});
 	if(resultData.success == true) {
 		var data = resultData.data;
 		var html = '';
@@ -108,7 +108,7 @@ function SetSecurity() {
 }
 
 function queryLoginInfo() {
-	var resultData = sendAjax("http://192.168.120.208:7777/TestController/queryLoginInfo",{});
+	var resultData = sendAjax("http://192.168.120.238:7777/TestController/queryLoginInfo",{});
 	if(resultData.success == true) {
 		var dataArray = resultData.data;
     	$("#loginName").text(dataArray[0].CORP_NAME);

@@ -80,7 +80,7 @@ function deleteToken() {
 }
 //获取网关服务地址
 function getwayUrl() {
-	return "http://192.168.120.208:9101";
+	return "http://192.168.120.238:9101";
 }
 
 //封装ajax同步POST请求
